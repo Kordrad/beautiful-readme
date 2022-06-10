@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo [LINT-STAGGED] START
+npx lint-staged -q
+echo [LINT-STAGGED] FINISH
