@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo [LINT-STAGGED] START
-npx lint-staged -q
-echo [LINT-STAGGED] FINISH
+node tools/husky/execute-loader.js command="lint-staged" run="npx lint-staged -q"
+
