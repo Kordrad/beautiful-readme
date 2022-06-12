@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo [commitlint] START
-npx --no-install commitlint --edit "$1"
-echo [commitlint] FINISH
+node tools/husky/execute-loader.js command="commitlint" run="npx --no-install commitlint --edit \"$1\""
