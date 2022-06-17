@@ -8,7 +8,9 @@
     "build": "nx build",
     "test": "nx test",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "// Web": "web scripts",
+    "start:web": "npm run start web"
   },
   "private": true,
   "dependencies": {
