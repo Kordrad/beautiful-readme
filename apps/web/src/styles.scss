@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@use './styles/functions';
+@use './styles/palette';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body {
+  background-color: functions.color(palette.$dark, background, base);
+  color: functions.color(palette.$dark, text, base);
+  font-family: 'Fira Code', monospace;
+  margin: 16px;
+}
+
+h1 {
+  $size-y: 32px;
+
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: $size-y;
+  padding-bottom: $size-y;
+}

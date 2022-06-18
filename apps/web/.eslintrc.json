@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "beautifulReadme",
+            "prefix": "web",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "beautiful-readme",
+            "prefix": "web",
             "style": "kebab-case"
           }
         ]
